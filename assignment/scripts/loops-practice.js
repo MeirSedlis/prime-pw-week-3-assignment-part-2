@@ -54,9 +54,45 @@ console.log('---- 3. While loop ----');
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
 
+// This question has broken me. See some failed efforts below.
+// let i = 0
+// let max = 6
+
+// while( i<max){
+//  console.log(stars)
+//  i++;
+// }
+
+// This solution didn't work. I'm not sure why.
+// const max = 6
+// while( stars.indexOf < max ){
+// console.log(stars)
+// }
+
+// This also didn't work 
+// while( stars.indexOf <6){
+// console.log(stars)
+// }
+
+// Third failed solution
+// while( stars.indexOf < stars.length ){
+// console.log( stars)
+// }
+
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
+let count = 0;
+let max = 6;
+while( count < max ){
+   console.log(count);
+   count++;
+}
 
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
-
+let backwards = 10;
+let base = 4;
+while( backwards > base ){
+  console.log( backwards );
+  backwards--;
+}
