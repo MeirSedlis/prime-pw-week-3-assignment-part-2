@@ -44,15 +44,28 @@ let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
 console.log('Some stars:');
-for( names of stars ){
-  console.log(names)
-}
+for( let name of stars ){
+  console.log(name)
+} 
+// updated per Matt's instructions - added let to remove 
+// global scope and changed to singular noun for clarity
 
 // 3. While loops  
 console.log('---- 3. While loop ----');
 
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
+
+stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb', 'Sirius'];
+
+let count = 0;
+
+while (count < stars.length) {
+   console.log(stars[count]);
+   count++;
+}
+// Instead of changing the code to let max = 6, how could you assign
+// a value to that variable based on how many things are in the array?
 
 // This question has broken me. See some failed efforts below.
 // let i = 0
@@ -81,7 +94,7 @@ console.log('Some stars using while:');
 
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
-let count = 0;
+count = 0;
 let max = 6;
 while( count < max ){
    console.log(count);
